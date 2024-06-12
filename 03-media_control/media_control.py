@@ -52,7 +52,7 @@ if MODEL_READY is False:
     gesture_model = GestureRecognitionModel(data_path, CONDITIONS, IMG_SIZES, COLOR_CHANNELS)
     gesture_model.run()
     # if you want to plot an overview of the models history turn plot to True
-    gesture_model.print_logs(plot=True)
+    gesture_model.print_logs(plot=False)
     
     model_instance = gesture_model.model
     label_names = gesture_model.label_names
