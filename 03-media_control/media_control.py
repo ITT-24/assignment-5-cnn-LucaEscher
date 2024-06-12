@@ -6,6 +6,7 @@ import numpy as np
 from pynput.keyboard import Key, Controller
 import json
 import sys
+import time
 import os
 
 CONDITIONS = ['stop', 'like', 'dislike']
@@ -21,6 +22,7 @@ def preprocess_image(img):
 
     return img_resized
 
+# had to be done with model_json and weight because i could not load a model from keras due to some version errors ?
 def load_gesture_model(model_path, weights_path, custom_objects=None):
     print('Loading model …')
     with open(model_path, 'r') as json_file:
@@ -93,5 +95,8 @@ while True:
             my_keyboard.release(Key.media_play_pause)
         case _:
             print('nothing is recognized!')
+            
+    # works better with time.sleep but latency is obviously not corresponding to the requirements then.
+    # time.sleep(1)
 
 

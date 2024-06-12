@@ -39,6 +39,8 @@ You can also find the trained model at 02-dataset/my_model.keras.
 
 # Task 3
 
+**Tipp: Hold a big white paper behind your hand which makes the gesture! This way the recognition is way better!**
+
 You can either train and use a new model or use the already created model.
 
 Call the function like this:
