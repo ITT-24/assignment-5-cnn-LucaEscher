@@ -28,8 +28,48 @@ Call annotate.py to create annotations for one folder. You can specify the folde
 
 Expected are directories which have pictures stored. The pircutres are expected to be named with the foldername they are in and a number. For example in the folder stop are pictures like stop1, stop2, stop3 and so on.
 
+**A JSON File for each annotation will be created. I then fused all condition annotations together to one file called annot-escher.json**
+
 ## Output
 
 You can find the final confusion matrix at 02-dataset/conf-matrix.png.
 
 You can also find the trained model at 02-dataset/my_model.keras.
+
+
+# Task 3
+
+You can either train and use a new model or use the already created model.
+
+Call the function like this:
+```
+python3 media_control.py False ../data/gesture_dataset_sample 1
+```
+
+## Params:
+
+```
+python3 media_control.py <model_loaded> <data_path> <video_id>
+```
+
+#### model_loaded:
+
+- Type: Boolean 
+- Indicates whether to load a pre-trained model or to train a new one.
+
+#### Values:
+True: Load a pre-trained model.
+False: Train a new model from the dataset.
+
+
+#### data_path:
+
+- Type: String
+- The path to the dataset HaGRID.
+- Example: ../data/gesture_dataset_sample
+ 
+#### video_id:
+
+- Type: Integer
+- The ID of the video device to use for capturing input gestures. Typically, 0 refers to the default webcam.
+- Example: 0 for the default webcam, 1 for an external webcam.
