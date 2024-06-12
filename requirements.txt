@@ -53,7 +53,14 @@ protobuf==4.25.3
 psutil==5.9.8
 ptyprocess==0.7.0
 pure-eval==0.2.2
+pyglet==2.0.15
 Pygments==2.18.0
+pynput==1.7.7
+pyobjc-core==10.3.1
+pyobjc-framework-ApplicationServices==10.3.1
+pyobjc-framework-Cocoa==10.3.1
+pyobjc-framework-CoreText==10.3.1
+pyobjc-framework-Quartz==10.3.1
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
