@@ -49,10 +49,10 @@ python3 media_control.py False ../data/gesture_dataset_sample 1
 ## Params:
 
 ```
-python3 media_control.py <model_loaded> <data_path> <video_id>
+python3 media_control.py <model_ready> <data_path> <video_id>
 ```
 
-#### model_loaded:
+#### model_ready:
 
 - Type: Boolean 
 - Indicates whether to load a pre-trained model or to train a new one.
