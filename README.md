@@ -75,3 +75,9 @@ False: Train a new model from the dataset.
 - Type: Integer
 - The ID of the video device to use for capturing input gestures. Typically, 0 refers to the default webcam.
 - Example: 0 for the default webcam, 1 for an external webcam.
+
+
+## Performance
+
+If you put a white sheet behind your hand and cover most of the frame of your webcame and hold the paper in the right angle it works good. :D
+It also worked waaay better after i increased the batch size from 8 to 32 and the epochs from 50 to 100. 
