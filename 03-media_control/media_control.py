@@ -67,6 +67,10 @@ else:
 # Create a video capture object for the webcam
 cap = cv2.VideoCapture(video_id)
 
+# controll computer keys
+# AS: merkst selber oder
+my_keyboard = Controller()
+
 while True:
     # Capture a frame from the webcam
     ret, frame = cap.read()
@@ -80,8 +84,6 @@ while True:
     prediction_label = label_names[np.argmax(prediction)]
     print(prediction_label)
     
-    # controll computer keys
-    my_keyboard = Controller()
     
     match(prediction_label):
         case 'like':
